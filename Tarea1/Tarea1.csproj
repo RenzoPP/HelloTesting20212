@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelloTesting20212.Tests\HelloTesting20212.Tests.csproj" />
+    <ProjectReference Include="..\HelloTesting20212\HelloTesting20212.csproj" />
+  </ItemGroup>
+
+</Project>
