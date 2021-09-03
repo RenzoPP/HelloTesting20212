@@ -22,53 +22,31 @@ namespace Tarea1
         }
 
         [Test]
-        public void Esnumeropar()
+        public void NumeroRomano()
         {
             var utils = new StringUtilities();
-            var par = new int[] {1,2,3,4,5 };
-           var result = utils.SumaPar(par);
+            var num = new int[] {20};
+           var result = utils.Romano(num);
            // Assert.AreNotEqual(6, result);
-            Assert.AreEqual(6, result);
+            Assert.AreEqual('X', result);
 
         }
+
 
         [Test]
-        public void Esnumeropar2()
+        public void NumeroRomano1()
         {
             var utils = new StringUtilities();
-            var par = new int[] { 10, 20, 33, 7, 5 };
-            var result = utils.SumaPar(par);
-            Assert.AreEqual(30, result);
+            var num = new int[] { 30 };
+            var result = utils.Romano(num);
+            // Assert.AreNotEqual(6, result);
+            Assert.AreEqual('XXX', result);
+
         }
 
-        [Test]
-        public void Esnumeropar3()
-        {
-            var utils = new StringUtilities();
-            var par = new int[] { 10, 20, 33, 7, 5 };
-            var result = utils.SumaPar(par);
-            Assert.AreEqual(30, result);
-        }
 
-        [Test]
-        public void Esnumeropar4()
-        {
-            var utils = new StringUtilities();
-            var par = new int[] { 10, 20, 33, 7, 5 };
-            var result = utils.SumaPar(par);
-            Assert.AreEqual(30, result);
-        }
 
-        [Test]
-        public void Esnumeropar5()
-        {
-            var utils = new StringUtilities();
-            var par = new int[] { 10, 20, 33, 7, 5 };
-            var result = utils.SumaPar(par);
-            Assert.AreEqual(30, result);
-            EXAMEN YA ESTOY PREPARADO
-        }
-
+    
 
         
 
