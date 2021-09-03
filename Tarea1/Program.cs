@@ -66,7 +66,9 @@ namespace Tarea1
             var par = new int[] { 10, 20, 33, 7, 5 };
             var result = utils.SumaPar(par);
             Assert.AreEqual(30, result);
-            EXAMEN YA ESTOY PREPARADO
+            Assert.AreEqual(30, result);
+            Assert.AreEqual(30, result);
+
         }
 
 
