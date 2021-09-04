@@ -14,10 +14,9 @@ namespace Problema2._0
             Console.WriteLine("\t3.- Tijera");
             Console.Write("\t: ");
             do
-            {
-                jugada_del_usuario = int.Parse(Console.ReadLine());
-                if (jugada_del_usuario < 1 || jugada_del_usuario > 3)
-                    Console.Write("Valor incorrecto. Ingresalo nuevamente.: ");
+            {jugada_del_usuario = int.Parse(Console.ReadLine());
+             if (jugada_del_usuario < 1 || jugada_del_usuario > 3)
+             Console.Write("Valor incorrecto. Ingresalo nuevamente.: ");
             } while (jugada_del_usuario < 1 || jugada_del_usuario > 3);
             jugada_del_ordenador = 1 + rand.Next(3);
             if (jugada_del_ordenador == 1)
@@ -34,8 +33,7 @@ namespace Problema2._0
                 Console.WriteLine("Gana ordenador");
             Console.WriteLine("Valor de jugada del ordenador: " + jugada_del_ordenador);
             Console.WriteLine();
-            Console.Write("Presiona una tecla para terminar . . . ");
-            Console.ReadKey();
+              Console.ReadKey();
         }
     }
 }

@@ -7,19 +7,19 @@ namespace Problema2._0
     }
 
     [Test]
-    public void NumeroRomano()
+    public void QuienGana()
     {
         var utils = new StringUtilities();
-        var num = new int[] { 20 };
+        
         var result = utils.Romano(num);
         // Assert.AreNotEqual(6, result);
-        Assert.AreEqual('XX', result);
+        Assert.isTrue(Tijera, result);
 
     }
 
 
     [Test]
-    public void NumeroRomano1()
+    public void QuienGana1()
     {
         var utils = new StringUtilities();
         var num = new int[] { 30 };
