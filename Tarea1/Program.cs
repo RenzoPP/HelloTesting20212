@@ -27,8 +27,9 @@ namespace Tarea1
             }
             Console.ReadLine();
         }
-    }
-    
-        
 
+
+      
     }
+
+}
