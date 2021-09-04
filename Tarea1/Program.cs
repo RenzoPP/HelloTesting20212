@@ -27,8 +27,25 @@ namespace Tarea1
             }
             Console.ReadLine();
         }
-    }
+
+<<<<<<<<< Temporary merge branch 1
+        [Test]
+        public void Esnumeropar5()
+        {
+            var utils = new StringUtilities();
+            var par = new int[] { 10, 20, 33, 7, 5 };
+            var result = utils.SumaPar(par);
+            Assert.AreEqual(30, result);
+            Assert.AreEqual(30, result);
+            Assert.AreEqual(30, result);
+
+        }
+=========
+>>>>>>>>> Temporary merge branch 2
+
+
     
+
         
 
     }
