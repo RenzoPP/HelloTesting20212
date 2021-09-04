@@ -6,49 +6,29 @@ namespace Tarea1
     {
         static void Main(string[] args)
         {
-            int can;
-            int suma_par = 0;
-            string num;
-            int[] array = new int[10];
-            Console.WriteLine("Cuantos elementos: ");
-            can = int.Parse(Console.ReadLine());
-            //Ingresar numero al array
-            for(int i = 1; i < can; i++)
+            String[] Unidad = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+            String[] Decena = { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
+            String[] Centena = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
+            Console.WriteLine("Ingresa numero entre 1 y 999");
+            int N = Convert.ToInt32(Console.ReadLine());
+            int u = N % 10;
+            int d = (N / 10) % 10;
+            int c = N / 100;
+            if (N >= 100)
             {
-                Console.WriteLine
-
+                Console.WriteLine(Centena[c] + Decena[d] + Unidad[u]);
             }
-              
+            else
+            {
+                if (N >= 10)
+                { Console.WriteLine(Decena[d] + Unidad[u]); }
+                else
+                { Console.WriteLine(Unidad[N]); }
+            }
+            Console.ReadLine();
         }
-
-        [Test]
-        public void NumeroRomano()
-        {
-            var utils = new StringUtilities();
-            var num = new int[] {20};
-           var result = utils.Romano(num);
-           // Assert.AreNotEqual(6, result);
-            Assert.AreEqual('X', result);
-
-        }
-
-
-        [Test]
-        public void NumeroRomano1()
-        {
-            var utils = new StringUtilities();
-            var num = new int[] { 30 };
-            var result = utils.Romano(num);
-            // Assert.AreNotEqual(6, result);
-            Assert.AreEqual('XXX', result);
-
-        }
-
-
-
+    }
     
-
         
 
     }
-}
