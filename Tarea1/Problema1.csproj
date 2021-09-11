@@ -9,9 +9,4 @@
     <PackageReference Include="NUnit" Version="3.13.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\HelloTesting20212.Tests\HelloTesting20212.Tests.csproj" />
-    <ProjectReference Include="..\HelloTesting20212\HelloTesting20212.csproj" />
-  </ItemGroup>
-
 </Project>
